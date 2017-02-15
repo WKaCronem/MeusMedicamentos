@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:weightSum="6">
+
+        <Button
+            android:id="@+id/btVOLTAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="3"
+            android:background="#FFFFFF"
+            android:text="VOLTAR" />
+
+        <Button
+            android:id="@+id/btSALVAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="3"
+            android:background="#FFFFFF"
+            android:text="SALVAR" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llMenu">
+
+        <LinearLayout
+            android:id="@+id/llListagem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="#FFFFFF"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="PACIENTE:" />
+
+            <EditText
+                android:id="@+id/etPACIENTE"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#f4f3f3"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="REMÉDIO:" />
+
+            <EditText
+                android:id="@+id/etREMEDIO"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#f4f3f3"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="SERVE PARA:" />
+
+            <EditText
+                android:id="@+id/etSERVER"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#f4f3f3"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="DOSAGEM:" />
+
+            <EditText
+                android:id="@+id/etDOSAGEM"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#f4f3f3"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="PEDIODO:" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <EditText
+                    android:id="@+id/etDATAINICIO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="#f4f3f3"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etDATAFIM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="#f4f3f3"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="HORA DO ALARME:" />
+
+            <EditText
+                android:id="@+id/etALARME"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#f4f3f3"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="QUAL INTERVALO:" />
+
+
+            <Spinner
+                android:id="@+id/spINTERVALOS"
+                android:background="#f4f3f3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
